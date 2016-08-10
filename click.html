@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-br" ng-app="myApp">
+    <head>
+        <meta charset="utf-8" />
+        <title>Meu primeiro commit</title>
+        <!-- Importando o angular -->
+        <script src="angular.min.js"></script>
+        <script></script>
+    </head>
+    <body ng-controller="control">
+        <div>
+            <h1>{{titulo}}</h1>
+            <input type="text" placeholder="Digite seu nome..." ng-model="nome"/>
+            <hr>
+            <input type="button" value="Clique aqui" 
+                ng-click="clicou()"/>
+            <input type="button" value="Exibir nome" 
+                ng-click="exibirNome(nome)"/>
+        </div>
+        <script src="click.controller.js"></script>
+    </body>
+</html>
